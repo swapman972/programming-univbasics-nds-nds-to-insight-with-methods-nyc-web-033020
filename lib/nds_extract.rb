@@ -19,5 +19,6 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  nil
+  count = 0
+  while count < nds[]
 end
