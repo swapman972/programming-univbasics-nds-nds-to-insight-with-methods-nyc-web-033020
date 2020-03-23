@@ -20,5 +20,8 @@ end
 def directors_totals(nds)
   result = {}
   count = 0
-  while count < nds[]
+  while count < nds.length do
+    result[]
+    count += 1
+  end
 end
