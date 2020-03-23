@@ -17,12 +17,13 @@ end
 # The return value should be like:
 #
 # { directorOne => allTheMoneyTheyMade, ... }
+
 def directors_totals(nds)
   result = {}
   count = 0
-  while count < nds.length do
+  while count1 < nds.length do
     result[nds[count][:name]] = gross_for_director(nds)
-    count += 1
+    count1 += 1
   end
   result
 end
