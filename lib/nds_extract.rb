@@ -18,21 +18,12 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 
-def gross_director(director_data)
-  count = 0
-  total = 0
-  while count < director_data[:movies].length do
-    total += director_data[:movies][count][:worldwide_gross]
-    count += 1
-  end
-  total
-end
 
 def directors_totals(nds)
   result = {}
   count1 = 0
   while count1 < nds.length do
-    result[nds[count1][:name]] = gross_for_director(nds)
+    result[nds[count1][:name]] = gross_for_director(nds[count1])
     count1 += 1
   end
   result
